@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="#b3ffb3"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainQuiz">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:background="#cc99ff"
+        android:minHeight="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+
+            android:background="#cc99ff"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coinImage"
+
+                android:background="@null"
+
+                android:src="@drawable/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/coinText"
+
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/coinImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:paddingRight="5dp"/>
+
+            <TextView
+
+
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_toLeftOf="@+id/timeText"
+                android:layout_toRightOf="@+id/coinText"
+                android:id="@+id/QuizText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/timeText"
+
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="@string/time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:background="#ffd9b3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quziQuestion"
+
+            android:text="@string/question"
+            android:textColor="#804000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+
+        <TextView
+
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""/>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonA"
+
+            android:text=""
+            android:textColor="#ccffcc"
+            android:backgroundTint="#ff9900"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="buttonA"
+
+            android:shadowColor="#757171" />
+
+        <Button
+            android:id="@+id/buttonB"
+
+            android:textColor="#ccffcc"
+            android:backgroundTint="#0000ff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="buttonB"
+            android:text=""
+            android:shadowColor="#757171" />
+
+
+        <Button
+            android:id="@+id/buttonC"
+
+            android:text=""
+            android:textColor="#ccffcc"
+            android:backgroundTint="#ff0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="buttonC"
+            android:shadowColor="#757171" />
+
+        <Button
+            android:id="@+id/buttonD"
+
+            android:textColor="#ccffcc"
+            android:backgroundTint="#00b300"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="buttonD"
+            android:text=""
+            android:shadowColor="#757171" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

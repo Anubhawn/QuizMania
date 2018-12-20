@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3FFCE"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TimeCounter">
+
+    <TextView
+        android:id="@+id/timeUpText"
+
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/timeup"/>
+<ImageView
+
+    android:layout_marginTop="10dp"
+    android:src="@drawable/timmm"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></View>
+
+    <Button
+        android:id="@+id/playAgainButton"
+
+        android:text="@string/play_again"
+        android:backgroundTint="#ff9900"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+         />
+</LinearLayout>

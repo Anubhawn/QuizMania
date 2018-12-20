@@ -1,0 +1,15 @@
+<resources>
+    <string name="wrongans">Wrong Answer!</string>
+    <string name="timeup">Time Up</string>
+    <string name="play_game">Play Game</string>
+    <string name="quit">Quit</string>
+    <string name="next">Next</string>
+    <string name="cancel">✖</string>
+    <string name="app_name">Quiz Mania</string>
+    <string name="action_settings">Settings</string>
+    <string name="question">Question</string>
+    <string name="play_again">Play Again</string>
+    <string name="time">15</string>
+    <string name="correct">Correct</string>
+
+</resources>
